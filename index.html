@@ -69,13 +69,13 @@
       width: 100%;
       padding: 12px;
       margin-bottom: 20px;
-      border: 1px solid #cbd5e1;
+      border: none; /* Lines removed */
       border-radius: 6px;
       font-size: 1rem;
       font-family: inherit;
       color: #334155;
-      background-color: #f8fafc;
-      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+      background-color: #f1f5f9; /* Soft background to replace borders */
+      transition: box-shadow 0.2s ease, background-color 0.2s ease;
     }
 
     input[type="text"]:focus,
@@ -84,8 +84,7 @@
     select:focus,
     textarea:focus {
       outline: none;
-      border-color: #3b82f6;
-      box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+      box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3); /* Stronger focus ring since borders are gone */
       background-color: #ffffff;
     }
 
@@ -94,7 +93,7 @@
       min-height: 100px;
     }
 
-    /* Fieldset for Radio & Checkbox Groups (Improves Accessibility) */
+    /* Fieldset for Radio & Checkbox Groups */
     fieldset {
       border: none;
       margin-bottom: 20px;
